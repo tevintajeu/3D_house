@@ -42,6 +42,48 @@ ctx.line_to(500,0)
 ctx.line_to(595,160)
 #Roof End
 
+#Roof Window
+ctx.save()
+ctx.translate(120,-40)
+ctx.move_to(165,210)#1
+ctx.line_to(165,155)#4
+ctx.stroke()
+
+#Window
+ctx.move_to(173,155)#4
+ctx.line_to(230,143)#6
+ctx.line_to(230,183)#6
+ctx.line_to(173,198)#1
+ctx.line_to(173,155)#4
+
+ctx.move_to(173 +4,155+4)#4
+ctx.line_to(230 - 4,143 + 6)#6
+ctx.line_to(230 -4,183 - 4)#6
+ctx.line_to(173 + 4,198 - 6)#1
+ctx.line_to(173 + 4,155 + 4)#4
+
+ctx.move_to(177,156)
+ctx.line_to(177, 176)
+ctx.stroke()
+
+#Roof
+ctx.move_to(165,210)#1
+ctx.line_to(135,160)#2
+ctx.line_to(123,160)#3
+ctx.line_to(160,160)#4
+ctx.line_to(200,120)#5
+ctx.line_to(250,150)#6
+ctx.line_to(254,145)#7
+ctx.line_to(200,113)#8
+ctx.line_to(165,113)#9
+ctx.line_to(123,160)#3
+
+ctx.move_to(165,210)#1
+ctx.line_to(240,185)#6
+ctx.line_to(240,143)#6
+ctx.set_line_width(4)
+ctx.restore()
+
 ctx.move_to(570,180)
 ctx.line_to(590,175)
 ctx.line_to(595,160)
@@ -91,8 +133,6 @@ ctx.line_to(260,365)
 ctx.close_path()
 ctx.move_to(260,325)
 ctx.line_to(300,315)
-
-
 
 #Right Window
 ctx.translate(100,-25)
