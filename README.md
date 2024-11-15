@@ -28,18 +28,18 @@ Ensure you have:
 - Pycairo: Install using the command:
       pip install pycairo
 
-##Steps on how to install and access the project
+## Steps on how to install and access the project
   -Clone the repository to your local machine
      cd 3D 
   -Run the main script
      python 3D_house.py
      
-##Project Structure
+## Project Structure
 3d_house.py: The main script where the Pycairo functions are defined and executed to create the house.
 config.py (optional): A configuration file for advanced users, where you can define color palettes, dimensions, and shadow properties for easy customization.
 assets/ (optional): Directory for storing reference images, icons, or textures that you might want to incorporate.
 
-##Project Walkthrough
+## Project Walkthrough
 The script creates the 3D house by breaking down the structure into several key elements:
 
 Base Structure: A simple rectangular prism forms the main body of the house, drawn using rectangles and polygons.
@@ -47,12 +47,12 @@ Roof: The triangular and trapezoidal shapes that form the roof are layered on to
 Windows and Door: Rectangular shapes are used with color fills to resemble windows, with added borders and shadows to give depth.
 Lighting and Shadows: Shadows are added strategically to give an illusion of sunlight from a specific direction, enhancing the 3D appearance.
 
-##Advanced Customizations
+## Advanced Customizations that can be made
 Adjusting Perspective: Modify coordinates to create different perspectives or angles.
 Custom Colors: Use custom RGB values to change colors for each element. This is done within the script by altering the color variables.
 Adding Textures: For a more realistic effect, consider adding subtle textures by drawing tiny patterns or gradients to simulate materials like bricks or tiles.
 
-##Where Users Can Get Help with Your Project
+## Where Users Can Get Help with Your Project
 If you encounter any issues or have questions, support is available:
 
 GitHub Issues: Report bugs or request features in the Issues section.
