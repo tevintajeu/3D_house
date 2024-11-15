@@ -57,6 +57,7 @@ ctx.line_to(595,160)
 ctx.stroke()
 
 #Window in Shade
+ctx.set_line_width(4)
 ctx.translate(-10,0)
 ctx.move_to(120,300)
 ctx.line_to(200,350)
