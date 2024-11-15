@@ -57,30 +57,59 @@ ctx.line_to(595,160)
 ctx.stroke()
 
 #Window in Shade
-ctx.set_line_width(4)
+#WindowPane
 ctx.translate(-10,0)
+ctx.save()
+ctx.set_source_rgb(0,158,93)
+ctx.move_to(120,300)
+ctx.line_to(200,350)
+ctx.line_to(200,250)
+ctx.line_to(120,200)
+ctx.fill()
+ctx.restore()
+
+#WindowFrame
+ctx.set_line_width(4)
 ctx.move_to(120,300)
 ctx.line_to(200,350)
 ctx.line_to(200,250)
 ctx.line_to(120,200)
 ctx.close_path()
+ctx.move_to(160,225)
+ctx.line_to(160,325)
+ctx.move_to(120,250)
+ctx.line_to(200,300)
+
 
 #Front Windows
 ctx.translate(30,0)
 #Left Window
 ctx.move_to(260,280)
-ctx.line_to(320,265)
-ctx.line_to(320,355)
-ctx.line_to(260,370)
+ctx.line_to(300,270)
+ctx.line_to(300,355)
+ctx.line_to(260,365)
 ctx.close_path()
+ctx.move_to(260,325)
+ctx.line_to(300,315)
+
+
 
 #Right Window
 ctx.translate(100,-25)
 ctx.move_to(260,280)
-ctx.line_to(320,265)
-ctx.line_to(320,355)
-ctx.line_to(260,370)
+ctx.line_to(300,270)
+ctx.line_to(300,355)
+ctx.line_to(260,365)
 ctx.close_path()
+ctx.move_to(260,325)
+ctx.line_to(300,315)
 ctx.stroke()
+
+#DoorKnob
+ctx.save()
+ctx.scale(1, 2)
+ctx.arc(400, 160, 4, 0, 2 * 3.14159)
+ctx.restore()
+ctx.fill()
 
 surface.write_to_png("house.png")
